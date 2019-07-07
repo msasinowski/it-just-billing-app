@@ -1,2 +1,3 @@
 # it-just-billing-app
-Biling App use for own purposes
+
+It is monolith repository that contains both backend written in NestJs and front-end written in ReactJs
