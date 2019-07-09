@@ -29,12 +29,13 @@ export class AuthService {
         thirdPartyId,
         provider,
       );
-
+      console.log({ user });
       if (!user) {
         const user: User = {
           thirdPartyId,
           provider,
         };
+        console.log('asd');
         await this.userService.create(user);
       }
 

@@ -21,6 +21,7 @@ export class UserService {
     thirdPartyId: String,
     provider: String,
   ): Promise<User> {
-    return await this.userModel.find({ thirdPartyId, provider });
+    console.log('wer');
+    return await this.userModel.findOne({ thirdPartyId, provider }).exec();
   }
 }
